@@ -96,6 +96,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\NewsLetterDbContext.cs" />
     <Compile Include="Models\Subscriptions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
