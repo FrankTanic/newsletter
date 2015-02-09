@@ -3,8 +3,13 @@ using System.Data.Entity;
 
 namespace Newsletter.Models
 {
-    public class NewsLetterDbContext : DbContext
+    public class NewsletterDbContext : DbContext
     {
+        public NewsletterDbContext() 
+            : base("NewsletterContext")
+        {
+        }
+
         DbSet<Subscriptions> Subscriptions { get; set; }
     }
 }
