@@ -1,0 +1,10 @@
+﻿@model Newsletter.Models.SubscriptionViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<p>@Model.Name will receive a @Model.Interval newsletter at @Model.Email</p>
+<a href=@Url.Action("Edit", new { id = @Model.ID })>Change</a> - <a href=@Url.Action("Delete", new { id = @Model.ID})>Unsubscribe</a>
